@@ -1,4 +1,4 @@
-Automated Waste Sorter (CNN) 
+# Automated Waste Sorter (CNN) 
 
 An end-to-end computer vision pipeline that utilizes Transfer Learning (ResNet-18) to autonomously categorize recyclable materials and waste.
 
@@ -49,9 +49,9 @@ hf download garythung/trashnet --repo-type dataset --local-dir data/raw
 
     Ensure your data_loader.py points to the final extracted image directory (e.g., data/raw/dataset-resized/dataset-resized).
 
-  Usage
+## Usage
 
-## Training the Model
+### Training the Model
 
 To start the training loop from scratch, run:
 Bash
@@ -60,7 +60,7 @@ python -m src.train
 
 This will process the data, train the final layer using the Adam optimizer and Cross-Entropy Loss, and save the highest-performing weights to models/waste_sorter.pth.
 
-## Evaluating the Model
+### Evaluating the Model
 To test the model's accuracy on unseen data and generate a performance breakdown:
 Bash
 
