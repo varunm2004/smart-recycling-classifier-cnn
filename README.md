@@ -3,7 +3,8 @@ Automated Waste Sorter (CNN)
 An end-to-end computer vision pipeline that utilizes Transfer Learning (ResNet-18) to autonomously categorize recyclable materials and waste.
 
 This project aims to improve recycling efficiency by accurately classifying images of trash into six distinct categories: Cardboard, Glass, Metal, Paper, Plastic, and General Trash.
-🧠 Methodology & Architecture
+
+ ## Methodology & Architecture
 
 Instead of training a Convolutional Neural Network (CNN) from scratch, this project leverages Transfer Learning.
 
@@ -13,27 +14,8 @@ Instead of training a Convolutional Neural Network (CNN) from scratch, this proj
 
     Data Augmentation: To prevent overfitting and simulate real-world environmental variations, the training pipeline applies dynamic random cropping, horizontal flipping, and rotational shifts to the dataset.
 
-  Project Structure
-Plaintext
 
-automated-waste-sorter-cnn/
-│
-├── data/
-│   └── raw/                  # Downloaded TrashNet dataset goes here
-│
-├── models/                   # Directory for saved model weights (.pth)
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py        # Dataset initialization, splitting, and augmentation
-│   ├── model.py              # ResNet-18 architecture and layer modifications
-│   ├── train.py              # Main training loop and validation logic
-│   └── evaluate.py           # Inference script and metric generation
-│
-├── requirements.txt          # Project dependencies
-└── README.md
-
-  Installation & Setup
+ ## Installation & Setup
 
 1. Clone the repository
 Bash
@@ -69,7 +51,8 @@ hf download garythung/trashnet --repo-type dataset --local-dir data/raw
 
   Usage
 
-Training the Model
+## Training the Model
+
 To start the training loop from scratch, run:
 Bash
 
@@ -77,7 +60,7 @@ python -m src.train
 
 This will process the data, train the final layer using the Adam optimizer and Cross-Entropy Loss, and save the highest-performing weights to models/waste_sorter.pth.
 
-Evaluating the Model
+## Evaluating the Model
 To test the model's accuracy on unseen data and generate a performance breakdown:
 Bash
 
