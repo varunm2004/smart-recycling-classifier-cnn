@@ -29,6 +29,11 @@ Bash
 python -m venv venv
 source venv/Scripts/activate  # On Windows Git Bash
 
+OR
+
+python -m venv venv
+source venv\Scripts\activate  # On Windows Git Bash
+
 3. Install dependencies
 Bash
 
