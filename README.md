@@ -72,7 +72,8 @@ Bash
 python -m src.evaluate
 
 This will output a detailed classification report (Precision, Recall, F1-Score) and save a confusion_matrix.png visualization to the root directory.
-📊 Results
+
+### Results
 
 The model leverages a pre-trained ResNet-18 network fine-tuned over 5 epochs. Based on internal testing splits, it achieves rapid convergence, establishing baseline accuracies above 78% on the training set and ~74% on the validation set with standard data augmentation techniques applied.
 
